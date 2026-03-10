@@ -1,0 +1,25 @@
+# 编译生成的可执行文件
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 测试生成的文件
+*.test
+*.out
+
+# 操作系统自动生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 依赖包目录 (如果在项目里使用了 vendor)
+vendor/
+
+# GoLand IDE 配置
+.idea/
