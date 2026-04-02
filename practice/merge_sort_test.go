@@ -53,13 +53,11 @@ func TestMergeSort_Basic(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			// 拷贝一份原数组，防止测试用例的数据被直接修改
-			input := make([]int, len(tt.arr))
-			copy(input, tt.arr)
-
-			// 针对 nil 的特殊处理
-			if tt.arr == nil {
-				input = nil
+			var input []int
+			if tt.arr != nil {
+				// 拷贝一份原数组，防止测试用例的数据被直接修改
+				input = make([]int, len(tt.arr))
+				copy(input, tt.arr)
 			}
 
 			MergeSort(input)
