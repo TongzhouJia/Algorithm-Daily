@@ -2,7 +2,7 @@ package practice
 
 // SmallSum 供外部调用的主方法
 func SmallSum(arr []int) int {
-	if arr == nil || len(arr) < 2 {
+	if len(arr) < 2 {
 		return 0
 	}
 	return processSmallSum(arr, 0, len(arr)-1)
